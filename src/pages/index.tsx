@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import MapboxExample from "@/components/testmap";
 import MapWithGeocoder from "@/components/geoCoder";
 import MapWithLines from "@/components/mapLocations";
+import PayHereCheckout from "@/components/payment";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +28,8 @@ export default function Home() {
       <div style={{ height: "100vh",width: "100vw",display: "flex" }}>
         {/* <MapboxExample/> */}
         {/* <MapWithGeocoder/> */}
-        <MapWithLines/>
+        {/* <MapWithLines/> */}
+        <PayHereCheckout bookingId="5a2667e7-2440-4190-a57b-3ecd04825cd9"/>
       </div>
     </>
   );
